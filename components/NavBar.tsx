@@ -3,7 +3,7 @@ import React from "react";
 export default function NavBar() {
   return (
     <section>
-      <div>NavBar</div>
+      <div>Test Push on Vercel</div>
     </section>
   );
 }
