@@ -1,0 +1,95 @@
+{
+  //Editor Behavior
+  "editor.formatOnSave": true,
+  "editor.suggestSelection": "first",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    // "source.organizeImports": true
+  },
+  // Editor indentation settings
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": true,
+  "prettier.singleQuote": false,
+  "editor.renderLineHighlight": "gutter",
+  "workbench.editor.labelFormat": "short",
+  // Emmet
+  "emmet.syntaxProfiles": {
+    "javascript": "jsx" // Defines auto closing tags in JSX
+  },
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // Pretier settings
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[css][scss][less]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "cSpell.words": [
+    "Bastrop",
+    "Bruel",
+    "Carullo",
+    "casely",
+    "Casely",
+    "Cryoneurolysis",
+    "extralight",
+    "flickity",
+    "Flickity",
+    "Gasserian",
+    "Gritsenko",
+    "groq",
+    "hotspot",
+    "Intrathecal",
+    "Iovera",
+    "jasonballejo",
+    "khou",
+    "Khou",
+    "KINESIO",
+    "Kosharskyy",
+    "Kyphoplasty",
+    "Laminectomy",
+    "Lentz",
+    "levien",
+    "Levien",
+    "MDNC",
+    "METTS",
+    "Milner",
+    "Montefiore",
+    "MYOFASCIAL",
+    "Neuromodulation",
+    "Neuropathic",
+    "Pappagallo",
+    "parkinsons",
+    "Parkinsons",
+    "Perioperative",
+    "Piriformis",
+    "Postherpetic",
+    "Practioner",
+    "Radiofrequency",
+    "Scottscdale",
+    "Shaparin",
+    "Superion",
+    "swiper",
+    "Swiper",
+    "Urman",
+    "Vadivelu",
+    "Vertiflex",
+    "vesely",
+    "Vesely",
+    "Vydyanathan"
+  ],
+}
