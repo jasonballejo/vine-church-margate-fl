@@ -1,11 +1,12 @@
 "use client";
-import React from "react";
+import { isDrawerOpenAtom } from "@/atoms/DrawerAtom";
+import { Menu, Transition } from "@headlessui/react";
+import { useSetAtom } from "jotai";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
 import { FiChevronDown, FiMenu } from "react-icons/fi";
-
-import { Menu, Transition } from "@headlessui/react";
+import NavBarDrawer from "./NavBarDrawer";
 
 export const navigation = [
   { name: "Home", href: "/" },
@@ -53,7 +54,7 @@ export const navigation = [
 ];
 
 export default function NavBar() {
-  // const setIsDrawerOpen = useSetAtom(isDrawerOpenAtom);
+  const setIsDrawerOpen = useSetAtom(isDrawerOpenAtom);
 
   return (
     <Fragment>
@@ -70,7 +71,7 @@ export default function NavBar() {
           </Link>
 
           <button
-            // onClick={() => setIsDrawerOpen(true)}
+            onClick={() => setIsDrawerOpen(true)}
             className="w-10 h-10 p-1 items-center justify-center flex lg:hidden"
           >
             <FiMenu className="w-full h-full text-white" />
@@ -142,7 +143,7 @@ export default function NavBar() {
         </div>
       </nav>
 
-      {/* <NavBarDrawer /> */}
+      <NavBarDrawer />
     </Fragment>
   );
 }

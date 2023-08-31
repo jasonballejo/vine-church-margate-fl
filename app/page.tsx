@@ -1,5 +1,5 @@
 import Image from "next/image";
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/NavBar/NavBar";
 import TopMenu from "@/components/TopMenu";
 
 export default function Home() {
