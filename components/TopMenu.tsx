@@ -20,7 +20,7 @@ export default function TopMenu() {
             <button className="w-52 h-10 text-lg uppercase border rounded-md">
               Give
             </button>
-            <button className="w-52 h-10 text-lg uppercase border border- -purple-500 to-cyan-500 rounded-md">
+            <button className="w-52 h-10 text-lg uppercase border border-cyan-500 rounded-md">
               Join Online
             </button>
           </div>
