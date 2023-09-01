@@ -1,5 +1,6 @@
-import Image from "next/image";
 import React from "react";
+import Image from "next/image";
+import StyledBtn from "./StyledBtn";
 
 export default function ServiceTimes() {
   return (
@@ -17,16 +18,12 @@ export default function ServiceTimes() {
           </div>
           <div className="flex justify-center items-center gap-5">
             <div className="">
-              <h3 className="mb-2">Saturday</h3>
-              <button className="border rounded-lg border-black px-5 py-1">
-                7:30pm
-              </button>
+              <h3 className="mb-1">Saturday</h3>
+              <StyledBtn name="7:30pm" />
             </div>
             <div className="">
-              <h3 className="mb-2">Sunday</h3>
-              <button className="border rounded-lg border-black px-5 py-1">
-                10:30am
-              </button>
+              <h3 className="mb-1">Sunday</h3>
+              <StyledBtn name="10:30am" />
             </div>
           </div>
         </div>

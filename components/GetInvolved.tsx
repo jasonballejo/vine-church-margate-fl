@@ -1,4 +1,5 @@
 import React from "react";
+import StyledBtn from "./StyledBtn";
 
 export default function GetInvolved() {
   return (
@@ -22,18 +23,10 @@ export default function GetInvolved() {
           </p>
         </div>
         <div className="flex justify-center items-center gap-5">
-          <button className="border-[3px] border-black hover:border-cyan-500 rounded-lg px-5 py-1">
-            Life Group
-          </button>
-          <button className="border-[3px] border-black hover:border-cyan-500 rounded-lg px-5 py-1">
-            Baptism
-          </button>
-          <button className="border-[3px] border-black hover:border-cyan-500 rounded-lg px-5 py-1">
-            Volunteer
-          </button>
-          <button className="border-[3px] border-black hover:border-cyan-500 rounded-lg px-5 py-1">
-            Courses
-          </button>
+          <StyledBtn name="Life Groups" />
+          <StyledBtn name="Baptism" />
+          <StyledBtn name="Volunteer" />
+          <StyledBtn name="Courses" />
         </div>
       </div>
     </section>
