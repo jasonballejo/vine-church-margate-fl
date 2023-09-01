@@ -1,0 +1,44 @@
+import Image from "next/image";
+import React from "react";
+
+export default function ServiceTimes() {
+  return (
+    <section className="w-full flex justify-center items-center my-40">
+      <div className="max-w-7xl w-full flex justify-center items-center text-center px-3 gap-10">
+        <div className="flex flex-col justify-center items-center gap-10">
+          <div className="flex flex-col justify-center items-center gap-2">
+            <h1 className="text-3xl font-bold tracking-wider">
+              <span className="font-normal">Service</span> Times
+            </h1>
+            <p className="text-lg tracking-wider">
+              Bring your family and friends. <br />
+              We can&apos;t wait to see you!
+            </p>
+          </div>
+          <div className="flex justify-center items-center gap-5">
+            <div className="">
+              <h3 className="mb-2">Saturday</h3>
+              <button className="border rounded-lg border-black px-5 py-1">
+                7:30pm
+              </button>
+            </div>
+            <div className="">
+              <h3 className="mb-2">Sunday</h3>
+              <button className="border rounded-lg border-black px-5 py-1">
+                10:30am
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="w-[600px]">
+          <Image
+            src="/images/DSC09496.jpg"
+            alt="Vernon"
+            width={600}
+            height={350}
+          />
+        </div>
+      </div>
+    </section>
+  );
+}

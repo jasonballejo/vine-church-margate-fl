@@ -3,7 +3,8 @@ import Images from "next/image";
 
 export default function TopMenu() {
   return (
-    <section className="w-full absolute top-0 -z-10">
+    // <section className="w-full absolute top-0 -z-10">
+    <section className="w-full top-0 -z-10">
       <div className="w-full h-[70vh] flex flex-col justify-center items-center bg-[url('/images/DSC07961.jpg')] bg-no-repeat bg-center bg-cover">
         <div className="absolute -z-0 bg-gradient-to-t from-black to-transparent h-[70vh] w-full " />
         <div className="w-[50%] flex flex-col justify-center items-center text-center text-white gap-5 z-0">
