@@ -3,6 +3,7 @@ import NavBar from "@/components/NavBar/NavBar";
 import TopMenu from "@/components/TopMenu";
 import ServiceTimes from "@/components/ServiceTimes";
 import GetInvolved from "@/components/GetInvolved";
+import ExperienceGiving from "@/components/ExperienceGiving";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <TopMenu />
       <ServiceTimes />
       <GetInvolved />
+      <ExperienceGiving />
     </main>
   );
 }
