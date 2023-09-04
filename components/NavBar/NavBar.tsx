@@ -133,12 +133,6 @@ export default function NavBar() {
                 );
               }
             })}
-
-            {/* <StyledButton size="sm" variant="outlined">
-              Member Login
-            </StyledButton>
-
-            <StyledButton size="sm">Join Now</StyledButton> */}
           </div>
         </div>
       </nav>
