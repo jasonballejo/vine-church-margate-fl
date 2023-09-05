@@ -4,30 +4,30 @@ import Image from "next/image";
 export default function TopMenu() {
   return (
     // <section className="w-full absolute top-0 -z-10">
-    <section className="w-full -z-10">
-      <div className="relative w-full h-[70vh] flex flex-col justify-end items-center">
+    <section className="w-full h-full">
+      <div className="relative w-full sm:h-[70vh] flex flex-col justify-end items-center">
         {/* <div className="absolute -z-0 bg-gradient-to-t from-black to-transparent h-[70vh] w-full " /> */}
-        <div className="max-w-5xl sm:w-full w-[70%] flex flex-col justify-end text-white gap-5">
-          <Image
-            className="absolute top-0 z-0 border rounded-[16px]"
-            src="/images/DSC07961.jpg"
-            alt=""
-            width={1048}
-            height={550}
-          />
-          <div className="flex flex-col gap-5 mb-28">
-            <div className="flex flex-col z-0 ml-10">
+        <Image
+          className="absolute top-0 sm:w-[1048px] w-[400px] h-[550px] z-0 border rounded-[16px] object-cover"
+          src="/images/DSC07961.jpg"
+          alt="image"
+          width={1048}
+          height={550}
+        />
+        <div className="max-w-5xl sm:w-full w-[70%] flex flex-col justify-end sm:items-center items-start text-white gap-5">
+          <div className="flex flex-col gap-5 sm:mb-32 mb-0 sm:ml-10 ml-0 z-0">
+            <div className="flex flex-col z-0 gap-1">
               <h2 className="sm:text-4xl text-xl font-bold uppercase z-0">
                 Welcome <span className="font-extralight">home</span>
               </h2>
-              <p className="w-[70%] sm:text-md text-sm font-extralight tracking-widest z-0">
+              <p className="w-[70%] sm:text-md text-xs font-extralight tracking-widest z-0">
                 Our burden is to edify a church of overcomers where every member
                 is a minister and every house an extension of the Church thereby
                 conquering our generations to Christ through life-groups that
-                multiply
+                multiply.
               </p>
             </div>
-            <div className="flex sm:flex-row flex-col gap-5 sm:mt-0 mt-10 z-0 ml-10">
+            <div className="flex gap-5 z-0">
               <button className="w-52 h-10 text-lg uppercase border rounded-md">
                 Give
               </button>
