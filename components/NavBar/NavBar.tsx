@@ -100,7 +100,7 @@ export default function NavBar() {
                       leaveFrom="transform opacity-100 scale-100"
                       leaveTo="transform opacity-0 scale-95"
                     >
-                      <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right overflow-hidden rounded-[12px] border border-white border-opacity-5 bg-[rgba(50,_47,_47,_0.95);] shadow-[0px_5px_24px_-5px_rgba(14,_31,_53,_0.15);] uppercase">
+                      <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right overflow-hidden rounded-[16px] border border-white border-opacity-5 bg-white shadow-[0px_5px_24px_-5px_rgba(14,_31,_53,_0.15);] uppercase">
                         {item.links.map((link, index) => (
                           <Menu.Item key={index}>
                             {({ active }) => (
@@ -108,8 +108,8 @@ export default function NavBar() {
                                 href={link.href}
                                 className={`${
                                   active
-                                    ? "bg-[#282828] text-white"
-                                    : "text-white"
+                                    ? "bg-purple-500 text-black"
+                                    : "text-black"
                                 } group flex w-full items-center px-4 py-3 text-[12px]`}
                               >
                                 {link.name}
