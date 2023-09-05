@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <section className="flex justify-center items-center bg-black py-10">
       <div className="px-3">
-        <div className="w-full flex justify-center items-center text-white gap-5 my-5">
+        <div className="w-full flex sm:justify-center justify-start sm:items-center items-start text-white gap-5 my-5">
           <Link href="#">
             <BsTwitter />
           </Link>
@@ -20,7 +20,7 @@ export default function Footer() {
             <BsYoutube />
           </Link>
         </div>
-        <div className="w-full flex justify-center items-center gap-20 my-5">
+        <div className="w-full flex sm:flex-row flex-col justify-center sm:items-center items-start sm:gap-20 gap-5 my-5">
           <div className=" text-white">
             <h4 className="text-lg font-bold uppercase">About</h4>
             <ul className="text-sm font-light my-2">
@@ -91,7 +91,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center text-xs font-extralight tracking-widest text-white">
+        <div className="flex flex-col justify-center sm:items-center items-start text-xs font-extralight tracking-widest text-white">
           <p>5000 Coconut Creek Pkwy, Margate, FL 33063</p>
           <p>
             © {new Date().getFullYear()} Vine Church Florida | All Rights
