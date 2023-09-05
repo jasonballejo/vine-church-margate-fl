@@ -4,6 +4,7 @@ import TopMenu from "@/components/TopMenu";
 import ServiceTimes from "@/components/ServiceTimes";
 import GetInvolved from "@/components/GetInvolved";
 import ExperienceGiving from "@/components/ExperienceGiving";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <ServiceTimes />
       <GetInvolved />
       <ExperienceGiving />
+      <Footer />
     </main>
   );
 }
