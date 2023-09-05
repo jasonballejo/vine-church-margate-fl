@@ -22,7 +22,7 @@ export default function GetInvolved() {
             Click a link below to get involved!
           </p>
         </div>
-        <div className="flex justify-center items-center gap-5">
+        <div className="w-full flex justify-center items-center gap-5">
           <StyledBtn name="Life Groups" />
           <StyledBtn name="Baptism" />
           <StyledBtn name="Volunteer" />
