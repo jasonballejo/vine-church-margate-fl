@@ -59,7 +59,7 @@ export default function NavBar() {
   return (
     <Fragment>
       <nav className="w-full h-20 px-4 bg-navColor/50 flex justify-center items-center">
-        <div className="max-w-7xl w-full flex items-center justify-between">
+        <div className="max-w-5xl w-full flex items-center justify-between">
           <Link href="/" className="max-w-[150px] w-full">
             <Image
               className="w-full"
@@ -74,7 +74,7 @@ export default function NavBar() {
             onClick={() => setIsDrawerOpen(true)}
             className="w-10 h-10 p-1 items-center justify-center flex lg:hidden"
           >
-            <FiMenu className="w-full h-full text-white" />
+            <FiMenu className="w-full h-full text-black" />
           </button>
 
           <div className="w-fit items-center justify-center gap-4 hidden lg:flex">
