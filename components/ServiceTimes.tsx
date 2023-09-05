@@ -4,8 +4,8 @@ import StyledBtn from "./StyledBtn";
 
 export default function ServiceTimes() {
   return (
-    <section className="w-full flex justify-center items-center my-5">
-      <div className="max-w-5xl w-full flex justify-center items-center text-center px-3 gap-10">
+    <section className="w-full flex justify-center items-center my-5 relative z-10 sm:mt-0 mt-20">
+      <div className="max-w-5xl w-full flex sm:flex-row flex-col justify-center items-center text-center px-3 gap-10">
         <div className="flex flex-col justify-center items-center gap-10">
           <div className="flex flex-col justify-center items-center gap-2">
             <h1 className="text-3xl font-bold tracking-wider">
@@ -27,7 +27,7 @@ export default function ServiceTimes() {
             </div>
           </div>
         </div>
-        <div className="w-[600px]">
+        <div className="sm:w-[600px] w-full">
           <Image
             src="/images/DSC09496.jpg"
             alt="Vernon"
