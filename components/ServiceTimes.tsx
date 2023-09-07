@@ -29,6 +29,7 @@ export default function ServiceTimes() {
         </div>
         <div className="sm:w-[600px] w-full">
           <Image
+            className="border rounded-[16px]"
             src="/images/DSC09496.jpg"
             alt="Vernon"
             width={600}
