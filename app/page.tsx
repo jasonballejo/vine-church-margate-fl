@@ -1,7 +1,7 @@
 import Image from "next/image";
 import NavBar from "@/components/NavBar/NavBar";
 import TopMenu from "@/components/TopMenu";
-import ServiceTimes from "@/components/ServiceTimes";
+import ConnectSection from "@/components/ConnectSection";
 import GetInvolved from "@/components/GetInvolved";
 import ExperienceGiving from "@/components/ExperienceGiving";
 import Footer from "@/components/Footer";
@@ -13,8 +13,8 @@ export default function Home() {
     >
       <NavBar />
       <TopMenu />
-      <ServiceTimes />
-      <GetInvolved />
+      <ConnectSection />
+      {/* <GetInvolved /> */}
       <ExperienceGiving />
       <Footer />
     </main>
