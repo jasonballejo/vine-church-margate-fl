@@ -80,7 +80,7 @@ export default function Footer() {
               </Link>
             </ul>
             <ul className="text-sm font-light my-2">
-              <Link href="#">
+              <Link href="https://pushpay.com/g/vinechurchfl?src=hpp">
                 <li>Give</li>
               </Link>
             </ul>

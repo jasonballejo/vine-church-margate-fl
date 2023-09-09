@@ -1,5 +1,6 @@
 import React from "react";
 import StyledBtn from "./StyledBtn";
+import Link from "next/link";
 
 export default function ExperienceGiving() {
   return (
@@ -16,7 +17,9 @@ export default function ExperienceGiving() {
           </p>
         </div>
         <div className="flex justify-center items-center gap-5">
-          <StyledBtn name="Give Now" />
+          <Link href="https://pushpay.com/g/vinechurchfl?src=hpp">
+            <StyledBtn name="Give Now" />
+          </Link>
         </div>
       </div>
     </section>
