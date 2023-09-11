@@ -5,9 +5,9 @@ import StyledBtn from "./StyledBtn";
 
 export default function ConnectSection() {
   return (
-    <section className="w-full flex justify-center items-center my-5 relative z-10 sm:mt-0 mt-20">
-      <div className="max-w-5xl w-full flex sm:flex-row flex-col justify-center items-center px-3 gap-10">
-        <div className="sm:w-[300px] w-full sm:h-[450px] h-full justify-center border rounded-[16px] overflow-hidden">
+    <section className="w-full flex justify-center items-center my-5 relative z-10 sm:mt-0 mt-20 sm:px-0 px-3">
+      <div className="max-w-5xl w-full flex sm:flex-row flex-col justify-between items-center sm:gap-0 gap-3">
+        <div className="sm:w-[330px] w-full sm:h-[450px] h-full justify-center border rounded-[16px] overflow-hidden">
           <Image
             src="/images/DSC09496.jpg"
             alt="Vernon"
@@ -28,7 +28,7 @@ export default function ConnectSection() {
             </Link>
           </div>
         </div>
-        <div className="sm:w-[300px] w-full sm:h-[450px] h-full justify-center border rounded-[16px] overflow-hidden">
+        <div className="sm:w-[330px] w-full sm:h-[450px] h-full justify-center border rounded-[16px] overflow-hidden">
           <Image
             src="/images/DSC09496.jpg"
             alt="Vernon"
@@ -47,7 +47,7 @@ export default function ConnectSection() {
             </Link>
           </div>
         </div>
-        <div className="sm:w-[300px] w-full sm:h-[450px] h-full justify-center border rounded-[16px] overflow-hidden">
+        <div className="sm:w-[330px] w-full sm:h-[450px] h-full justify-center border rounded-[16px] overflow-hidden">
           <Image
             src="/images/DSC09496.jpg"
             alt="Vernon"

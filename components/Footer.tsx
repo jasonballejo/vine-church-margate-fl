@@ -23,22 +23,22 @@ export default function Footer() {
         <div className="w-full flex sm:flex-row flex-col justify-center sm:items-center items-start sm:gap-20 gap-5 my-5">
           <div className=" text-white">
             <h4 className="text-lg font-bold uppercase">About</h4>
-            <ul className="text-sm font-light my-2">
+            <ul className="text-sm font-light my-2 hover:text-purple-700">
               <Link href="#">
                 <li>Our Leadership</li>
               </Link>
             </ul>
-            <ul className="text-sm font-light my-2">
+            <ul className="text-sm font-light my-2 hover:text-purple-700">
               <Link href="#">
                 <li>Vision</li>
               </Link>
             </ul>
-            <ul className="text-sm font-light my-2">
+            <ul className="text-sm font-light my-2 hover:text-purple-700">
               <Link href="#">
                 <li>Beliefs</li>
               </Link>
             </ul>
-            <ul className="text-sm font-light my-2">
+            <ul className="text-sm font-light my-2 hover:text-purple-700">
               <Link href="#">
                 <li>Worship</li>
               </Link>
@@ -46,22 +46,22 @@ export default function Footer() {
           </div>
           <div className=" text-white">
             <h4 className="text-lg font-bold uppercase">Get Involved</h4>
-            <ul className="text-sm font-light my-2">
+            <ul className="text-sm font-light my-2 hover:text-purple-700">
               <Link href="#">
                 <li>Life Group</li>
               </Link>
             </ul>
-            <ul className="text-sm font-light my-2">
+            <ul className="text-sm font-light my-2 hover:text-purple-700">
               <Link href="#">
                 <li>Baptism</li>
               </Link>
             </ul>
-            <ul className="text-sm font-light my-2">
+            <ul className="text-sm font-light my-2 hover:text-purple-700">
               <Link href="#">
                 <li>Volunteer</li>
               </Link>
             </ul>
-            <ul className="text-sm font-light my-2">
+            <ul className="text-sm font-light my-2 hover:text-purple-700">
               <Link href="#">
                 <li>Courses</li>
               </Link>
@@ -69,22 +69,22 @@ export default function Footer() {
           </div>
           <div className=" text-white">
             <h4 className="text-lg font-bold uppercase">More</h4>
-            <ul className="text-sm font-light my-2">
+            <ul className="text-sm font-light my-2 hover:text-purple-700">
               <Link href="#">
                 <li>Enjoy MVT</li>
               </Link>
             </ul>
-            <ul className="text-sm font-light my-2">
+            <ul className="text-sm font-light my-2 hover:text-purple-700">
               <Link href="#">
                 <li>Calendar</li>
               </Link>
             </ul>
-            <ul className="text-sm font-light my-2">
+            <ul className="text-sm font-light my-2 hover:text-purple-700">
               <Link href="https://pushpay.com/g/vinechurchfl?src=hpp">
                 <li>Give</li>
               </Link>
             </ul>
-            <ul className="text-sm font-light my-2">
+            <ul className="text-sm font-light my-2 hover:text-purple-700">
               <Link href="#">
                 <li>Contact</li>
               </Link>
