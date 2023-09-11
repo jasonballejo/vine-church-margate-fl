@@ -29,7 +29,7 @@ export default function NavBarDrawer() {
       } transition-all duration-300 overflow-x-hidden`}
     >
       {/* <div className="w-[447px] h-[136px] flex items-center justify-center absolute left-[-131px] bottom-[254px] z-0">
-        <NavbarDrawerLine />
+        <NavbarDrawerLines />
       </div> */}
 
       <div className="w-full pt-6 flex items-center justify-between relative z-10">
