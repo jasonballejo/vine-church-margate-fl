@@ -13,6 +13,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         bgDrawer: "url('/images/DSC00149.jpg')",
+        bgTopMenu: "url('/images/DSC07961.jpg')",
       },
     },
   },
