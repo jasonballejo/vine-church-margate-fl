@@ -24,7 +24,7 @@ export default function NavBarDrawer() {
 
   return (
     <div
-      className={`w-full h-screen bg-white fixed top-0 bottom-0 z-[99] flex flex-col items-center justify-start px-4 border-l border-l-white border-opacity-10 ${
+      className={`w-full h-screen bg-bgDrawer bg-center bg-no-repeat object-contain fixed top-0 bottom-0 z-[99] flex flex-col items-center justify-start px-4 border-l border-l-white border-opacity-10 ${
         isDrawerOpen ? "right-0" : "right-[-100%]"
       } transition-all duration-300 overflow-x-hidden`}
     >
@@ -45,7 +45,7 @@ export default function NavBarDrawer() {
           onClick={() => setIsDrawerOpen(false)}
           className="w-10 h-10 p-1 items-center justify-center flex lg:hidden"
         >
-          <FiX className="w-full h-full text-black" />
+          <FiX className="w-full h-full text-white" />
         </button>
       </div>
 
@@ -56,7 +56,7 @@ export default function NavBarDrawer() {
               <Disclosure key={item.name}>
                 {({ open }) => (
                   <div className="w-full flex flex-col gap-3">
-                    <Disclosure.Button className="w-full flex items-center justify-center gap-1 text-base font-normal font-plusJak uppercase text-black">
+                    <Disclosure.Button className="w-full flex items-center justify-center gap-1 text-base font-normal font-plusJak uppercase text-white">
                       {item.name}
                       <FiChevronDown
                         className={`${
@@ -69,7 +69,7 @@ export default function NavBarDrawer() {
                         <Link
                           key={index}
                           href={link.href}
-                          className="text-black group flex w-full items-center justify-center py-3 text-base hover:text-[#ffff4b]"
+                          className="text-white group flex w-full items-center justify-center py-3 text-base hover:text-[#ffff4b]"
                         >
                           {link.name}
                         </Link>
@@ -84,7 +84,7 @@ export default function NavBarDrawer() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-base text-black font-normal font-plusJak uppercase"
+                className="text-base text-white font-normal font-plusJak uppercase"
               >
                 {item.name}
               </Link>
@@ -99,43 +99,43 @@ export default function NavBarDrawer() {
           Member Login
         </button> */}
 
-        <div className="w-full py-6 border-t border-white border-opacity-10 flex flex-col">
+        <div className="w-full py-6 border-t border-white text-white flex flex-col">
           <div className="w-full flex items-center justify-start gap-4">
             <p>Follow Us:</p>
 
             <span className="flex items-center justify-start gap-4">
               <Link
-                className="w-8 h-8 p-1.5 border border-white border-opacity-10 rounded-md flex items-center justify-center"
+                className="w-8 h-8 p-1.5 border border-white rounded-md flex items-center justify-center"
                 href="#"
                 target="_blank"
               >
-                <FaFacebookF className="w-full h-full text-black text-opacity-40" />
+                <FaFacebookF className="w-full h-full text-white" />
               </Link>
 
               <Link
-                className="w-8 h-8 p-1.5 border border-white border-opacity-10 rounded-md flex items-center justify-center"
+                className="w-8 h-8 p-1.5 border border-white rounded-md flex items-center justify-center"
                 href="#"
                 target="_blank"
               >
-                <FaLinkedinIn className="w-full h-full text-black text-opacity-40" />
+                <FaLinkedinIn className="w-full h-full text-white" />
               </Link>
 
               <Link
-                className="w-8 h-8 p-1.5 border border-white border-opacity-10 rounded-md flex items-center justify-center"
+                className="w-8 h-8 p-1.5 border border-white rounded-md flex items-center justify-center"
                 href="#"
                 target="_blank"
               >
-                <FaPodcast className="w-full h-full text-black text-opacity-40" />
+                <FaPodcast className="w-full h-full text-white" />
               </Link>
             </span>
           </div>
 
-          <p className="text-sm text-black tracking-wide mt-4 mb-2">
+          <p className="text-sm text-white tracking-wide mt-4 mb-2">
             © VIM:Vine Church {new Date().getFullYear()}
           </p>
 
           <span className="w-full flex items-center justify-start gap-1">
-            <p className="text-black text-sm">Powered by The Ballejo Group</p>
+            {/* <p className="text-white text-sm">Powered by The Ballejo Group</p> */}
             {/* <Image
               className="max-w-[160px]"
               width={266}
