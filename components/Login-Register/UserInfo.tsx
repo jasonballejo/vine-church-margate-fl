@@ -1,3 +1,5 @@
+"use client";
+
 export default function UserInfo() {
   return (
     <div className="grid place-items-center h-screen">
