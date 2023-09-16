@@ -134,6 +134,13 @@ export default function NavBar() {
               }
             })}
           </div>
+          <div className="flex">
+            <Link href="/login">
+              <button className="border rounded-[16px] border-purple-700 hover:bg-purple-700 hover:text-white transition ease-in duration-200 px-5 py-1 text-[12px] font-normal font-plusJak uppercase">
+                VSM Login
+              </button>
+            </Link>
+          </div>
         </div>
       </nav>
 
