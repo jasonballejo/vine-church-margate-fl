@@ -6,11 +6,7 @@ import { authOptions } from "../api/auth/[...nextauth]/route";
 export default async function Register() {
   const session = await getServerSession(authOptions);
 
-  if (session) redirect("dashboard");
+  if (session) redirect("/dashboard");
 
-  return (
-    <>
-      <RegisterForm />
-    </>
-  );
+  return <RegisterForm />;
 }

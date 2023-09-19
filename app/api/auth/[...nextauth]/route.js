@@ -1,14 +1,14 @@
-import NextAuth from "next-auth/next";
-import CredentialsProvider from "next-auth/providers/credentials";
 import { connectMongoDB } from "@/lib/mongodb";
 import User from "@/models/user";
+import NextAuth from "next-auth/next";
+import CredentialsProvider from "next-auth/providers/credentials";
 import bcrypt from "bcryptjs";
 
 export const authOptions = {
   providers: [
     CredentialsProvider({
       name: "credentials",
-      credential: {},
+      credentials: {},
 
       async authorize(credentials) {
         const { email, password } = credentials;
@@ -29,7 +29,7 @@ export const authOptions = {
 
           return user;
         } catch (error) {
-          console.log("error: ", error);
+          console.log("Error: ", error);
         }
       },
     }),
@@ -39,7 +39,7 @@ export const authOptions = {
   },
   secret: process.env.NEXTAUTH_SECRET,
   pages: {
-    signIn: "/login",
+    signIn: "/",
   },
 };
 

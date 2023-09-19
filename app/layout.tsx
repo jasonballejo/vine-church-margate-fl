@@ -17,7 +17,11 @@ export const metadata: Metadata = {
     "Our burden is to edify a church of overcomers where every member is a minister and every house an extension of the Church thereby conquering our generations to Christ through life-groups that multiply.",
 };
 
-export default function a({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className={montserrat.className}>
