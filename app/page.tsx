@@ -1,4 +1,3 @@
-import Image from "next/image";
 import NavBar from "@/components/NavBar/NavBar";
 import TopMenu from "@/components/TopMenu";
 import ConnectSection from "@/components/ConnectSection";

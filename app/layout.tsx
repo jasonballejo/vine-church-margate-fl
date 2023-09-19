@@ -1,4 +1,5 @@
 import "./globals.css";
+import { AuthProvider } from "./Providers";
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 
@@ -19,7 +20,9 @@ export const metadata: Metadata = {
 export default function a({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
+      <body className={montserrat.className}>
+        <AuthProvider>{children}</AuthProvider>
+      </body>
       <GA4 GA4_ID={process.env.NEXT_PUBLIC_GA4_ID} />
     </html>
   );
