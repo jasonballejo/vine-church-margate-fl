@@ -34,8 +34,16 @@ export const authOptions = {
       },
     }),
   ],
+  callbacks: {
+    async jwt(token, user) {
+      if (user) {
+        token.id = user.id;
+      }
+      return token;
+    },
+  },
   session: {
-    strategy: "jwt",
+    jwt: true,
   },
   secret: process.env.NEXTAUTH_SECRET,
   pages: {
