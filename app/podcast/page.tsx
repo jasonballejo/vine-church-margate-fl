@@ -41,7 +41,7 @@ function PodcastSpotlight({
           className="rounded-[12px]"
           src={image}
           alt={title}
-          width={600}
+          width={450}
           height={250}
         ></Image>
       </div>
@@ -62,11 +62,11 @@ function PodcastList({ image, title, href }: PodcastLowerProps) {
         <Link href={href}>
           {" "}
           <Image
-            className="rounded-[12px]"
+            className="h-[200px] rounded-[12px] object-center"
             src={image}
             alt={`${title} image`}
             width={300}
-            height={100}
+            height={200}
           />
         </Link>
         <p>{title}</p>
