@@ -20,12 +20,13 @@ export default function TopMenu() {
             </p>
           </div>
           <div className="flex flex-row gap-5">
-            <Link href="https://pushpay.com/g/vinechurchfl?src=hpp"><button className="sm:w-52 w-20 sm:h-10 h-7 sm:text-lg text-sm uppercase border rounded-md bg-purple-500">
-              Give
-            </button>
+            <Link href="https://pushpay.com/g/vinechurchfl?src=hpp">
+              <button className="sm:w-52 w-20 sm:h-10 h-7 sm:text-lg text-sm uppercase border rounded-md bg-purple-500">
+                Give
+              </button>
             </Link>
             <button className="sm:w-52 w-36 sm:h-10 h-7 sm:text-lg text-sm text-black uppercase sm:border border-none border-cyan-500 rounded-md bg-white">
-              Join Online
+              <Link href="/spotify">Join Online</Link>
             </button>
           </div>
         </div>
