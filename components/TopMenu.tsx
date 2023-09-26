@@ -26,7 +26,7 @@ export default function TopMenu() {
               </button>
             </Link>
             <button className="sm:w-52 w-36 sm:h-10 h-7 sm:text-lg text-sm text-black uppercase sm:border border-none border-cyan-500 rounded-md bg-white">
-              <Link href="/spotify">Join Online</Link>
+              <Link href="/fast">Fasting</Link>
             </button>
           </div>
         </div>

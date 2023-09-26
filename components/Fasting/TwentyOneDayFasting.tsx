@@ -16,7 +16,7 @@ export default function TwentyOneDayFasting() {
           </p>
           <p>
             <button className="border border-purple-500 px-10 py-2 hover:border-slate-600">
-              <Link href="/spotify">Spotify</Link>
+              <Link href="/podcast">Hear our Podcast</Link>
             </button>
           </p>
         </div>
