@@ -90,7 +90,7 @@ export default function Podcast() {
         <h2 className="text-[25px] text-white font-bold pl-20 pt-10">
           Related Items
         </h2>
-        <div className="w-full flex items-center justify-between gap-16 pb-16 pt-7 px-20">
+        <div className="w-full flex items-center justify-between gap-16 pt-7 px-20">
           <PodcastList
             title="Background People"
             image="/images/podcast-vine.png"
