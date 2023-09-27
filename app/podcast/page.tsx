@@ -1,6 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+// import required modules
+import { Navigation } from "swiper/modules";
+
 import Image from "next/image";
 import Link from "next/link";
 // import { BsFillPlayFill } from "react-icons/bs";
@@ -25,7 +35,9 @@ function PodcastSpotlight({
     <div className="w-full sm:h-[60vh] h-[90vh] sm:grid sm:grid-cols-2 flex flex-col-reverse items-center justify-items-center gap-10 py-16 sm:pr-20 sm:pl-32 sm:px-0 px-8">
       <div className="flex flex-col justify-center sm:items-start items-center sm:text-left text-center text-white gap-1">
         <h1 className="sm:text-[64px] text-2xl font-bold uppercase">{title}</h1>
-        <p className="sm:text-[15px] text-[12px] font-light">{date}</p>
+        <p className="sm:text-[15px] text-[12px] font-light sm:pt-4 pt-0">
+          {date}
+        </p>
         <p className="w-[90%] sm:text-[16px] text-[14px]">{description}</p>
         <div className="flex flex-col justify-center items-center mt-5">
           <button className="flex justify-center items-center border rounded-[6px] py-3 px-8 mb-2">
@@ -60,7 +72,6 @@ function PodcastList({ image, title, href }: PodcastLowerProps) {
     <>
       <div className="text-white flex flex-col justify-center gap-3">
         <Link href={href}>
-          {" "}
           <Image
             className="h-[200px] rounded-[12px] object-center"
             src={image}
@@ -91,11 +102,54 @@ export default function Podcast() {
           Related Items
         </h2>
         <div className="w-full flex items-center justify-between gap-16 pt-7 px-20">
-          <PodcastList
-            title="Background People"
-            image="/images/podcast-vine.png"
-            href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
-          />
+          <Swiper
+            navigation={true}
+            spaceBetween={30}
+            slidesPerView={1}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+              },
+              900: {
+                slidesPerView: 3,
+              },
+              1400: {
+                slidesPerView: 4,
+              },
+            }}
+            modules={[Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <PodcastList
+                title="Background People"
+                image="/images/podcast-vine.png"
+                href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <PodcastList
+                title="Background People"
+                image="/images/podcast-vine.png"
+                href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <PodcastList
+                title="Background People"
+                image="/images/podcast-vine.png"
+                href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
+              />
+            </SwiperSlide>
+            <SwiperSlide>
+              <PodcastList
+                title="Background People"
+                image="/images/podcast-vine.png"
+                href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
+              />
+            </SwiperSlide>
+          </Swiper>
+
           {/* <PodcastList
             title="Background People"
             image="/images/podcast-vine.png"
