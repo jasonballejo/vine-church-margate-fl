@@ -46,6 +46,10 @@ input {
   object-fit: cover;
 }
 
-.mySwiper .swiper-button-prev .swiper-button-right {
-  color: #c79489 !important;
+.mySwiper .swiper-button-prev {
+  display: none;
+}
+
+.mySwiper .swiper-button-next {
+  display: none;
 }
