@@ -46,7 +46,6 @@ input {
   object-fit: cover;
 }
 
-.mySwiper .swiper-pagination-bullet-active {
-  background: #c79489 !important;
-  /* border-radius: 50% !important; */
+.mySwiper .swiper-button-prev .swiper-button-right {
+  color: #c79489 !important;
 }
