@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { BsFillPlayFill } from "react-icons/bs";
+// import { BsFillPlayFill } from "react-icons/bs";
 import { FaHeadphonesAlt } from "react-icons/fa";
 
 interface PodcastSpotlightProps {
@@ -22,11 +22,11 @@ function PodcastSpotlight({
   href,
 }: PodcastSpotlightProps) {
   return (
-    <div className="w-full h-[60vh] grid grid-cols-2 items-center justify-items-center gap-10 py-16 pr-20 pl-32">
-      <div className="flex flex-col justify-center items-start text-white gap-1">
-        <h1 className="text-[40px] font-bold uppercase">{title}</h1>
-        <p>{date}</p>
-        <p className="w-[90%]">{description}</p>
+    <div className="w-full sm:h-[60vh] h-[90vh] sm:grid sm:grid-cols-2 flex flex-col-reverse items-center justify-items-center gap-10 py-16 sm:pr-20 sm:pl-32 sm:px-0 px-8">
+      <div className="flex flex-col justify-center sm:items-start items-center sm:text-left text-center text-white gap-1">
+        <h1 className="sm:text-[64px] text-2xl font-bold uppercase">{title}</h1>
+        <p className="sm:text-[15px] text-[12px] font-light">{date}</p>
+        <p className="w-[90%] sm:text-[16px] text-[14px]">{description}</p>
         <div className="flex flex-col justify-center items-center mt-5">
           <button className="flex justify-center items-center border rounded-[6px] py-3 px-8 mb-2">
             <Link href={href}>
@@ -96,7 +96,7 @@ export default function Podcast() {
             image="/images/podcast-vine.png"
             href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
           />
-          <PodcastList
+          {/* <PodcastList
             title="Background People"
             image="/images/podcast-vine.png"
             href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
@@ -110,7 +110,7 @@ export default function Podcast() {
             title="Background People"
             image="/images/podcast-vine.png"
             href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
-          />
+          /> */}
         </div>
       </div>
     </section>
