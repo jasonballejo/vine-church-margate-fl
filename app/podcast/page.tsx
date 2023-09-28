@@ -50,7 +50,7 @@ function PodcastSpotlight({
       </div>
       <div className="flex flex-col justify-center">
         <Image
-          className="rounded-[12px]"
+          className="sm:w-[450px] w-[300px] sm:h-[450px] h-[250px] rounded-[12px]"
           src={image}
           alt={title}
           width={450}
