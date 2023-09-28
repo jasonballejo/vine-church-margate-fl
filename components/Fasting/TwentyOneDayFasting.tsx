@@ -20,9 +20,11 @@ export default function TwentyOneDayFasting() {
             and Vision during this Time.
           </p>
           <p>
-            <button className="border border-purple-500 px-10 py-2 hover:border-slate-600">
-              <Link href="/podcast">Listen our Podcast</Link>
-            </button>
+            <Link href="/podcast">
+              <button className="border border-purple-500 px-10 py-2 hover:border-slate-600">
+                Listen our Podcast
+              </button>
+            </Link>
           </p>
         </div>
       </div>

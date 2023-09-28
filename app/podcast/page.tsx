@@ -97,7 +97,7 @@ export default function Podcast() {
         image="/images/podcast-vine.png"
       />
       {/* Bottom Part */}
-      <div className="w-full h-[40vh] bg-cover bg-no-repeat bg-gradient-to-l from-cyan-600 to-gray-200">
+      <div className="w-full h-[40vh] bg-cover bg-no-repeat bg-gradient-to-l from-cyan-600 to-gray-200 mb-20">
         <h2 className="text-[25px] text-white font-bold pl-20 pt-10">
           Related Items
         </h2>
@@ -149,22 +149,6 @@ export default function Podcast() {
               />
             </SwiperSlide>
           </Swiper>
-
-          {/* <PodcastList
-            title="Background People"
-            image="/images/podcast-vine.png"
-            href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
-          />
-          <PodcastList
-            title="Background People"
-            image="/images/podcast-vine.png"
-            href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
-          />
-          <PodcastList
-            title="Background People"
-            image="/images/podcast-vine.png"
-            href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
-          /> */}
         </div>
       </div>
     </section>
