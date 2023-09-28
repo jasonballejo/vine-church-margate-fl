@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import StyledBtn from "../StyledBtn";
 
 export default function TwentyOneDayFasting() {
   return (
@@ -19,13 +20,12 @@ export default function TwentyOneDayFasting() {
             Tune into our Devotionals daily during the Fast for Encouragement
             and Vision during this Time.
           </p>
-          <p>
-            <Link href="/podcast">
-              <button className="border border-purple-500 px-10 py-2 hover:border-slate-600">
+          <Link href="/podcast">
+            <StyledBtn name="Listen to our Podcast" />
+            {/* <button className="border border-purple-500 px-10 py-2 hover:border-slate-600">
                 Listen our Podcast
-              </button>
-            </Link>
-          </p>
+              </button> */}
+          </Link>
         </div>
       </div>
     </section>

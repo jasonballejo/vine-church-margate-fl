@@ -9,22 +9,20 @@ export default function ConnectSection() {
       <div className="max-w-5xl w-full flex sm:flex-row flex-col justify-between items-center sm:gap-0 gap-3">
         <div className="sm:w-[330px] w-full sm:h-[450px] h-full justify-center border rounded-[16px] overflow-hidden">
           <Image
-            src="/images/DSC09496.jpg"
-            alt="Vernon"
+            className="w-full h-[50%]"
+            src="/images/fasting.png"
+            alt="Fasting"
             width={600}
             height={350}
           />
-          <div className="w-full flex flex-col justify-center items-center px-3 py-3 gap-3">
-            <h4>Service Times</h4>
+          <div className="w-full flex flex-col justify-center items-center px-3 py-3 gap-3 text-center">
+            <h4>21 Day Prayer & Fast Devotional</h4>
             <p>
-              Bring your family and friends. <br />
-              We can&apos;t wait to see you!
+              Join us through our podcast. We have 21 days of devotional that
+              can help you during this fast!
             </p>
-            <Link href="#">
-              <StyledBtn name="Saturday: 7:30pm" />
-            </Link>
-            <Link href="#">
-              <StyledBtn name="Sunday: 10:30am" />
+            <Link href="/fast">
+              <StyledBtn name="Listen to the Podcast" />
             </Link>
           </div>
         </div>

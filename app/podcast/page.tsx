@@ -70,17 +70,17 @@ interface PodcastLowerProps {
 function PodcastList({ image, title, href }: PodcastLowerProps) {
   return (
     <>
-      <div className="text-white flex flex-col justify-center gap-3">
+      <div className="flex flex-col justify-center gap-3">
         <Link href={href}>
           <Image
-            className="h-[200px] rounded-[12px] object-center"
+            className="h-[200px] rounded-[12px] object-top"
             src={image}
             alt={`${title} image`}
             width={300}
             height={200}
           />
         </Link>
-        <p>{title}</p>
+        <p className="text-black">{title}</p>
       </div>
     </>
   );
@@ -94,11 +94,11 @@ export default function Podcast() {
         date="09/12/2023"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officia dolore provident rerum, accusamus voluptates, alias earum eaque distinctio eligendi minus blanditiis quo perferendis natus unde laborum numquam veritatis minima?"
         href="https://open.spotify.com/episode/4FixqWjONVWfPIaWOOSxv0?si=51ad84f4a87a43b0"
-        image="/images/podcast-vine.png"
+        image="/images/fasting.png"
       />
       {/* Bottom Part */}
       <div className="w-full h-[40vh] bg-cover bg-no-repeat bg-gradient-to-l from-cyan-600 to-gray-200 mb-20">
-        <h2 className="text-[25px] text-white font-bold pl-20 pt-10">
+        <h2 className="text-[25px] text-black font-bold pl-20 pt-10">
           Related Items
         </h2>
         <div className="w-full flex items-center justify-between gap-16 pt-7 px-20">
@@ -123,28 +123,28 @@ export default function Podcast() {
             <SwiperSlide>
               <PodcastList
                 title="Background People"
-                image="/images/podcast-vine.png"
+                image="/images/fasting.png"
                 href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
               />
             </SwiperSlide>
             <SwiperSlide>
               <PodcastList
                 title="Background People"
-                image="/images/podcast-vine.png"
+                image="/images/fasting.png"
                 href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
               />
             </SwiperSlide>
             <SwiperSlide>
               <PodcastList
                 title="Background People"
-                image="/images/podcast-vine.png"
+                image="/images/fasting.png"
                 href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
               />
             </SwiperSlide>
             <SwiperSlide>
               <PodcastList
                 title="Background People"
-                image="/images/podcast-vine.png"
+                image="/images/fasting.png"
                 href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
               />
             </SwiperSlide>

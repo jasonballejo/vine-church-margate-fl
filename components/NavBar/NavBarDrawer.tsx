@@ -69,7 +69,7 @@ export default function NavBarDrawer() {
                         <Link
                           key={index}
                           href={link.href}
-                          className="text-white group flex w-full items-center justify-center py-3 text-base hover:text-[#ffff4b]"
+                          className="text-white group flex w-full items-center justify-center py-3 text-base hover:text-[var(--gold)] uppercase"
                         >
                           {link.name}
                         </Link>
@@ -130,8 +130,9 @@ export default function NavBarDrawer() {
             </span>
           </div>
 
-          <p className="text-sm text-white tracking-wide mt-4 mb-2">
-            © VIM:Vine Church {new Date().getFullYear()}
+          <p className="text-[12px] text-white text-center tracking-wide mt-4 mb-2">
+            © {new Date().getFullYear()} Vine International Ministries: Vine
+            Church | All Rights Reserved
           </p>
 
           <span className="w-full flex items-center justify-start gap-1">

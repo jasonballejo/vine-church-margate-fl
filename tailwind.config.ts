@@ -15,6 +15,7 @@ const config: Config = {
         bgDrawer: "url('/images/DSC00149.jpg')",
         bgTopMenu: "url('/images/DSC07961.jpg')",
         bgFasting: "url('/images/DSC09718.jpg')",
+        bgFastingImage: "url('/images/fasting.png')",
       },
     },
   },

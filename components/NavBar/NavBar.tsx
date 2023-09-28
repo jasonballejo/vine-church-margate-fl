@@ -108,7 +108,7 @@ export default function NavBar() {
                                 href={link.href}
                                 className={`${
                                   active
-                                    ? "bg-purple-500 text-black"
+                                    ? "bg-[var(--gold)] text-black"
                                     : "text-black"
                                 } group flex w-full items-center px-4 py-3 text-[12px]`}
                               >
