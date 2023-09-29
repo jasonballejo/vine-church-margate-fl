@@ -33,14 +33,14 @@ function PodcastSpotlight({
 }: PodcastSpotlightProps) {
   return (
     <div className="w-full sm:h-[60vh] h-[90vh] sm:grid sm:grid-cols-2 flex flex-col-reverse items-center justify-items-center gap-10 py-16 sm:pr-20 sm:pl-32 sm:px-0 px-8">
-      <div className="flex flex-col justify-center sm:items-start items-center sm:text-left text-center text-white gap-1">
+      <div className="flex flex-col justify-center sm:items-start items-center sm:text-left text-center text-black gap-1">
         <h1 className="sm:text-[64px] text-2xl font-bold uppercase">{title}</h1>
         <p className="sm:text-[15px] text-[12px] font-light sm:pt-4 pt-0">
           {date}
         </p>
         <p className="w-[90%] sm:text-[16px] text-[14px]">{description}</p>
         <div className="flex flex-col justify-center items-center mt-5">
-          <button className="flex justify-center items-center border rounded-[6px] py-3 px-8 mb-2">
+          <button className="flex justify-center items-center border border-black rounded-[6px] py-3 px-8 mb-2">
             <Link href={href}>
               <FaHeadphonesAlt />
             </Link>
@@ -88,7 +88,7 @@ function PodcastList({ image, title, href }: PodcastLowerProps) {
 
 export default function Podcast() {
   return (
-    <section className=" w-full h-[100vh] bg-cover bg-no-repeat bg-gradient-to-r from-cyan-600 to-gray-300">
+    <section className=" w-full h-[100vh] bg-cover bg-no-repeat bg-gradient-to-r from-white to-gray-300">
       <PodcastSpotlight
         title="Build a House"
         date="09/12/2023"
@@ -97,7 +97,7 @@ export default function Podcast() {
         image="/images/fasting.png"
       />
       {/* Bottom Part */}
-      <div className="w-full h-[40vh] bg-cover bg-no-repeat bg-gradient-to-l from-cyan-600 to-gray-200 mb-20">
+      <div className="w-full h-[40vh] bg-cover bg-no-repeat bg-gradient-to-l from-white to-gray-200 mb-20">
         <h2 className="text-[25px] text-black font-bold pl-20 pt-10">
           Related Items
         </h2>
