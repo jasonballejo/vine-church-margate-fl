@@ -9,8 +9,8 @@ export default function ConnectSection() {
       <div className="max-w-5xl w-full flex sm:flex-row flex-col justify-between items-center sm:gap-0 gap-3">
         <div className="sm:w-[330px] w-full sm:h-[450px] h-full justify-center border rounded-[16px] overflow-hidden">
           <Image
-            className="w-full h-[50%]"
-            src="/images/fasting.png"
+            className="sm:h-[250px] h-[300px] object-center"
+            src="/images/DSC09496.jpg"
             alt="Fasting"
             width={600}
             height={350}
@@ -28,8 +28,9 @@ export default function ConnectSection() {
         </div>
         <div className="sm:w-[330px] w-full sm:h-[450px] h-full justify-center border rounded-[16px] overflow-hidden">
           <Image
-            src="/images/DSC09496.jpg"
-            alt="Vernon"
+            className="sm:h-[250px] h-[300px] object-center"
+            src="/images/fasting.png"
+            alt="Fasting"
             width={600}
             height={350}
           />
@@ -47,12 +48,13 @@ export default function ConnectSection() {
         </div>
         <div className="sm:w-[330px] w-full sm:h-[450px] h-full justify-center border rounded-[16px] overflow-hidden">
           <Image
+            className="sm:h-[250px] h-[300px] object-center"
             src="/images/DSC09496.jpg"
             alt="Vernon"
             width={600}
             height={350}
           />
-          <div className="w-full flex flex-col justify-center items-center px-3 py-3 gap-3">
+          <div className="w-full flex flex-col justify-center items-center px-3 py-3 gap-1">
             <h4>Service Times</h4>
             <p>
               Bring your family and friends. <br />

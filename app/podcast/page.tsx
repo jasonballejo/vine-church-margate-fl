@@ -40,11 +40,11 @@ function PodcastSpotlight({
         </p>
         <p className="w-[90%] sm:text-[16px] text-[14px]">{description}</p>
         <div className="flex flex-col justify-center items-center mt-5">
-          <button className="flex justify-center items-center border border-black rounded-[6px] py-3 px-8 mb-2">
-            <Link href={href}>
+          <Link href={href}>
+            <button className="flex justify-center items-center border border-black rounded-[6px] py-3 px-8 mb-2">
               <FaHeadphonesAlt />
-            </Link>
-          </button>
+            </button>
+          </Link>
           <p>Listen</p>
         </div>
       </div>
@@ -129,21 +129,21 @@ export default function Podcast() {
             </SwiperSlide>
             <SwiperSlide>
               <PodcastList
-                title="Background People"
+                title="Life is Great"
                 image="/images/fasting.png"
                 href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
               />
             </SwiperSlide>
             <SwiperSlide>
               <PodcastList
-                title="Background People"
+                title="Jesus Loves You"
                 image="/images/fasting.png"
                 href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
               />
             </SwiperSlide>
             <SwiperSlide>
               <PodcastList
-                title="Background People"
+                title="Life Group you should go"
                 image="/images/fasting.png"
                 href="https://open.spotify.com/episode/4LhPqb782m5D1MWnc2BZgU?si=16544a6671024569"
               />
