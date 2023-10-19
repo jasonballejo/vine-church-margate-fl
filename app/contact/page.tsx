@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function Contact() {
   return (
     <section>
-      <div>page</div>
+      <div>Contact</div>
     </section>
   );
 }
