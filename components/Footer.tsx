@@ -75,7 +75,7 @@ export default function Footer() {
               </Link>
             </ul>
             <ul className="text-sm font-light my-2 hover:text-[var(--gold)]">
-              <Link href="#">
+              <Link href="https://vinechurchfl.churchcenter.com/calendar?view=list">
                 <li>Calendar</li>
               </Link>
             </ul>

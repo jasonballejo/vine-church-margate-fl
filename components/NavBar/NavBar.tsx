@@ -89,7 +89,7 @@ export default function NavBar() {
                     as="div"
                     className="relative z-[99] inline-block text-left"
                   >
-                    <Menu.Button className="flex items-center justify-center gap-1 text-black text-[12px] font-normal font-plusJak uppercase">
+                    <Menu.Button className="flex items-center justify-center gap-1 text-black hover:text-[var(--gold)] text-[12px] font-normal font-plusJak uppercase">
                       {item.name}
                       <FiChevronDown />
                     </Menu.Button>
@@ -129,7 +129,7 @@ export default function NavBar() {
                   <Link
                     key={item.name}
                     href={item.href}
-                    className="text-black text-[12px] font-normal font-plusJak uppercase"
+                    className="text-black hover:text-[var(--gold)] text-[12px] font-normal font-plusJak uppercase"
                   >
                     {item.name}
                   </Link>
