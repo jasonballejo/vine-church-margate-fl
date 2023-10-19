@@ -1,7 +1,5 @@
-import React from "react";
-
 interface StyledBtnProps {
-  name: string;
+  name: string | undefined;
 }
 
 export default function StyledBtn({ name }: StyledBtnProps) {
