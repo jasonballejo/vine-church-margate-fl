@@ -48,7 +48,10 @@ export const navigation = [
       },
     ],
   },
-  { name: "Calendar", href: "/calendar" },
+  {
+    name: "Calendar",
+    href: "https://vinechurchfl.churchcenter.com/calendar?view=list",
+  },
   { name: "Give", href: "https://pushpay.com/g/vinechurchfl?src=hpp" },
   { name: "Contact Us", href: "/contact-us" },
 ];
